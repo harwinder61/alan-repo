@@ -3,7 +3,7 @@ import { StyleSheet, Text, TextInput, View } from 'react-native'
 import { appColors, shadow } from '../../utils/appColors'
 import { scale } from 'react-native-size-matters'
 import ReduxWrapper from '../../redux/ReduxWrapper'
-
+import EyeSlash from '../../assets/icons/eyeSlash.svg'
 function CustomInput({
     placeholder,
     value,
@@ -27,6 +27,7 @@ function CustomInput({
                 style={[styles.input,InputStyle, ]}
             />
             {IconRight}
+            {secureTextEntry&&<EyeSlash/>}
         </View>
     )
 }

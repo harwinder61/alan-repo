@@ -20,7 +20,7 @@ export default function Signup({navigation}) {
     const [modalVisible, setModalVisible] = useState(false)
 
     const _renderTerms = () => <View style={styles.termsWrap}>
-        <Label text={"I agree to the medidoc "} style={styles.termText} />
+        <Label text={"I agree to the "} style={styles.termText} />
         <Label text={"Terms of Service "} style={{ ...styles.termText, color: appColors.primary }} />
         <Label text={"and "} style={styles.termText} />
         <Label text={"Privacy Policy"} style={{ ...styles.termText, color: appColors.primary }} />

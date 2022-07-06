@@ -34,10 +34,9 @@ const _renderOR = () =><View style={styles.signup}>
       <CustomInput
         placeholder={"Enter your password"}
         IconLeft={<PassIcon />}
-        IconRight={<EyeSlash />}
         secureTextEntry
       />
-      <Label text={"Forgot Password?"} weight={"medium"} style={styles.forgot}/>
+      <Label onPress={()=>navigation.navigate("ForgotPassword")} text={"Forgot Password?"} weight={"medium"} style={styles.forgot}/>
       <CustomButton label={"Login"} onPress={()=>setModalVisible(true)}/>
       {_renderSignup()}
       {_renderOR()}
@@ -51,7 +50,7 @@ const _renderOR = () =><View style={styles.signup}>
               <DoneIc/>
               </View>
               <Label text={"Yeay! Welcome Back"} weight={"bold"} style={{fontSize:20,textAlign:"center"}}/>
-              <Label text={"Once again you login successfully into medidoc app"} style={{fontSize:16,textAlign:"center", color:appColors.gray,marginTop:20}}/>
+              <Label text={"Once again you login successfully into app"} style={{fontSize:16,textAlign:"center", color:appColors.gray,marginTop:20}}/>
             <CustomButton label={"Go to home"} style={styles.btn} onPress={()=>setModalVisible(false)}/>
                 </CustomModal>
     </Container>
