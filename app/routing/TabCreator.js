@@ -9,7 +9,8 @@ const Tab = createBottomTabNavigator();
 export default function TabCerator({routes}) {
   return (
     <Tab.Navigator
-      tabBarOptions={{
+    
+      tabBarOptions ={{
         activeTintColor: appColors.primary,
         inactiveTintColor: appColors.secondaryFont,
         style: {
