@@ -1,5 +1,6 @@
 export const appColors={
     primary:'#D20303',
+    darkPrimary:"#D1393A",
     secondary:"#fff",
     white:"#fff",
     lightPrimary:"rgba(210, 3, 3,0.3)",
